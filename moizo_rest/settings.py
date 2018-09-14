@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -143,3 +142,6 @@ STATIC_URL = '/static/'
 
 # base url for local settings
 BASE_URL = ''
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'collectstatic')
+STATIC_FILES = os.path.join(BASE_DIR, 'static/')
